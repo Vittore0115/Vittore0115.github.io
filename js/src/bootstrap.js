@@ -4,8 +4,7 @@ $(document).ready(function () {
 
   $(document).trigger('bootstrap:before');
 
-  // NexT.utils.isMobile() && window.FastClick.attach(document.body);
-  NexT.utils.isMobile()
+  NexT.utils.isMobile() && window.FastClick.attach(document.body);
   NexT.utils.lazyLoadPostsImages();
 
   NexT.utils.registerESCKeyEvent();
